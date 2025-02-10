@@ -9,7 +9,7 @@ body, html {
 }
 
 .container {
-    transform: scale(.9); /* Adjust scale (0.9 = 90% of original size) */
+    transform: scale(.8); /* Adjust scale (0.9 = 90% of original size) */
     transform-origin: top center; /* Ensures it scales from the center */
   display: flex;
   height: 100vh;

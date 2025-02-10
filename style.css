@@ -1,0 +1,127 @@
+/* Reset and general styles */
+body, html {
+  margin: 0;
+  padding: 10px;
+  font-family: 'Georgia', serif;
+  background-color: #fbf9f4; /* Consistent background */
+  color: #333;
+  font-size: 20px; /* Increase base font size */
+}
+
+.container {
+    transform: scale(.9); /* Adjust scale (0.9 = 90% of original size) */
+    transform-origin: top center; /* Ensures it scales from the center */
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 500px; /* Slightly increased sidebar width for better proportions */
+  background-color: #fbf9f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0; /* Maintain spacing consistency */
+  margin-top: 50px; /* Reduce the gap between the sidebar and "About Me" section */
+}
+
+
+.logo {
+  margin-top: 15px; /* Adjust spacing */
+}
+.logo img {
+  width: 300px; /* Adjust size as needed */
+  height: auto;
+  margin-bottom: -50px;
+  display: block; /* Ensures the image respects alignment rules */
+}
+
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+  width: 40%;
+  text-align: left;
+  margin-top: -auto;
+}
+
+.nav-links li {
+  margin: 20px 0; /* Slightly increased spacing for better readability */
+  font-size: 20px; /* Increased font size for navigation items */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links a:hover {
+  color: #d32f2f;
+}
+
+.nav-divider {
+  width: 57%; /* Reduce the width to make it less wide */
+  height: 2px; /* Increase the height to make it bolder */
+  background-color: #555; /* Darken the color for more prominence */
+  border: none; /* Ensure no default border is applied */
+  margin: 20px auto; /* Center the line and add spacing above/below */
+}
+
+
+
+.profile-pic {
+  margin-top: 15px; /* Adjust spacing */
+
+}
+
+.profile-pic img {
+  width: 280px; /* Increased size */
+  height: 320px;
+  object-fit: cover;
+  border-radius: 7px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Content styles */
+.content {
+  flex: 1;
+  padding: 100px 80px; /* Increase top padding to lower the content */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top by default */
+}
+
+/* About section */
+.about {
+  max-width: 900px; /* Maintain max width for readability */
+  text-align: left;
+  margin-top: 40px; /* Increase margin-top to push the text down */
+}
+
+.about h1 {
+  font-size: 42px; /* Larger heading */
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 40px;
+  color: #2d2d2d;
+}
+
+.about p {
+  font-size: 25px; /* Larger paragraph font size */
+  line-height: 1.9; /* Slightly increased line spacing for readability */
+  color: #555;
+  margin-bottom: 30px; /* Maintain consistent paragraph spacing */
+}
+
+.about p:last-child {
+  font-style: italic;
+  margin-top: 25px;
+}
+
+.nav-links a.active {
+  border-bottom: 2px ;
+}
+

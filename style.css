@@ -88,7 +88,7 @@ body, html {
 /* Content styles */
 .content {
   flex: 1;
-  padding: 100px 80px; /* Increase top padding to lower the content */
+  padding: 95px 80px; /* Increase top padding to lower the content */
   display: flex;
   flex-direction: column;
   justify-content: flex-start; /* Align content to the top by default */

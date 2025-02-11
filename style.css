@@ -5,51 +5,52 @@ body, html {
   font-family: 'Georgia', serif;
   background-color: #fbf9f4; /* Consistent background */
   color: #333;
-  font-size: 20px; /* Increase base font size */
+  font-size: 20px;
 }
 
 .container {
-    transform: scale(.8); /* Adjust scale (0.9 = 90% of original size) */
-    transform-origin: top center; /* Ensures it scales from the center */
+  transform: scale(.8);
+  transform-origin: top center;
   display: flex;
-  height: 100vh;
+  height: 103vh;
+}
+hr.solid {
+  border-top: 2px solid #070707;
+  margin-top: 0;
+
 }
 
 /* Sidebar styles */
 .sidebar {
-  width: 500px; /* Slightly increased sidebar width for better proportions */
+  width: 350px;
   background-color: #fbf9f4;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 0; /* Maintain spacing consistency */
-  margin-top: 50px; /* Reduce the gap between the sidebar and "About Me" section */
+  padding: 10px 0px;
+  margin-top: 0; /* Remove negative margin */
 }
 
 
-.logo {
-  margin-top: 15px; /* Adjust spacing */
-}
+/* Logo styling */
 .logo img {
-  width: 300px; /* Adjust size as needed */
+  width: 250px;
   height: auto;
-  margin-bottom: -50px;
-  display: block; /* Ensures the image respects alignment rules */
+  margin-bottom: -60px;
+
 }
 
-
+/* Navigation styling */
 .nav-links {
   list-style-type: none;
-  padding: 0;
-  margin: 10px 0;
-  width: 40%;
+  top-padding: 10 ;
+  width: 80%;
   text-align: left;
-  margin-top: -auto;
 }
 
 .nav-links li {
-  margin: 20px 0; /* Slightly increased spacing for better readability */
-  font-size: 20px; /* Increased font size for navigation items */
+  margin: 20px 0px;
+  font-size: 18px;
 }
 
 .nav-links a {
@@ -60,15 +61,7 @@ body, html {
 }
 
 .nav-links a:hover {
-  color: #d32f2f;
-}
-
-.nav-divider {
-  width: 57%; /* Reduce the width to make it less wide */
-  height: 2px; /* Increase the height to make it bolder */
-  background-color: #555; /* Darken the color for more prominence */
-  border: none; /* Ensure no default border is applied */
-  margin: 20px auto; /* Center the line and add spacing above/below */
+  color: #82211684;
 }
 
 
@@ -85,24 +78,22 @@ body, html {
   border-radius: 7px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-/* Content styles */
+/* Main content */
 .content {
   flex: 1;
-  padding: 95px 80px; /* Increase top padding to lower the content */
+  padding: 110px 60px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Align content to the top by default */
 }
 
 /* About section */
 .about {
-  max-width: 900px; /* Maintain max width for readability */
+  max-width: 900px;
   text-align: left;
-  margin-top: 40px; /* Increase margin-top to push the text down */
 }
 
 .about h1 {
-  font-size: 42px; /* Larger heading */
+  font-size: 38px;
   font-weight: bold;
   font-style: italic;
   margin-bottom: 40px;
@@ -110,10 +101,10 @@ body, html {
 }
 
 .about p {
-  font-size: 25px; /* Larger paragraph font size */
-  line-height: 1.9; /* Slightly increased line spacing for readability */
+  font-size: 22px;
+  line-height: 1.8;
   color: #555;
-  margin-bottom: 30px; /* Maintain consistent paragraph spacing */
+  margin-bottom: 30px;
 }
 
 .about p:last-child {
@@ -121,7 +112,58 @@ body, html {
   margin-top: 25px;
 }
 
-.nav-links a.active {
-  border-bottom: 2px ;
-}
+/* Mobile Responsiveness */
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
 
+  .sidebar {
+    width: 100%;
+    align-items: top;
+    padding-bottom: 20px;
+  }
+
+  .nav-links {
+    text-align: center;
+  }
+
+  .nav-divider {
+      width: 60%; /* Adjust width for smaller screens */
+      height: 2px;
+      background-color: #0b0b0b;
+      margin: 15px auto; /* Center it */
+      display: block;
+      visibility: visible !important;
+  }
+  
+  
+
+  .profile-pic {
+    text-align: center;
+  }
+
+  .profile-pic img {
+    width: 180px;
+    height: 200px;
+  }
+
+  .content {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .about {
+    max-width: 100%;
+  }
+
+  .about h1 {
+    font-size: 32px;
+  }
+
+  .about p {
+    font-size: 20px;
+  }
+}
